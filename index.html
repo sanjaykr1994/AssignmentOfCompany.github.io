@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		  <title>SharePal2.in</title>
+		  <meta charset="utf-8">
+		  <meta name="viewport" content="width=device-width, initial-scale=1">
+		  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+		<!-- Popper JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!------------Css Styles--------------->		
+		 <style>
+		 
+*{
+		margin=0;
+		padding=0;
+		font-font-family='josefin sans',sans-serif ;
+}
+		 
+  /* Make the image fully responsive */
+  .carousel-inner img {
+    width: 100%;
+    height: 50%;
+  }
+  
+  
+  .footer{
+  background: #152F4F;
+  color:white;
+  
+  .links{
+    ul {list-style-type: none;}
+    li a{
+      color: white;
+      transition: color .2s;
+      &:hover{
+        text-decoration:none;
+        color:#4180CB;
+        }
+    }
+  }  
+  .about-company{
+    i{font-size: 25px;}
+    a{
+      color:white;
+      transition: color .2s;
+      &:hover{color:#4180CB}
+    }
+  } 
+  .location{
+    i{font-size: 18px;}
+  }
+  .copyright p{border-top:1px solid rgba(255,255,255,.1);} 
+}
+
+
+<!-------Icon------------------->
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+<!------------Icon--End----------------->
+
+<!-------Css Style End--------------->
+	</style>	  
+	</head>
+	
+	<body>
+	<header>
+			<nav class="navbar navbar-expand-sm bg-dark sticky-top">
+			<ul class="navbar-nav ml-auto sticky-top">
+			<img src="SharePal.png" width="70" height="70">
+			   <li class="nav-item">
+					<a class="nav-link" href="#">HOME</a>
+			   </li>
+			 
+			<!--Dropdown-->	
+			 <li class="nav-item dropdown">
+				<li class="nav-item dropdown">
+						<a class="nav-link dropdown" href="#" id="navbardrop" data-toggle="dropdown">Products</a>
+						<div class="dropdown-menu">
+						<a class="dropdown-item" href="#">Vichiles</a>
+						<a class="dropdown-item" href="#">Tourinst</a>
+						<a class="dropdown-item" href="#">kitchen</a>
+						<a class="dropdown-item" href="#">Cloths</a>
+						<a class="dropdown-item" href="#">Electronics Accessories </a>
+					</div>
+				</li>
+			 </li>
+			<!--Dropdown End-->	
+				<li class="nav-item">
+					<a class="nav-link" href="#">Contact</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">About-Us</a>
+				</li>
+				
+				<!--Dropdown2-->	
+				<li class="nav-item dropdown">
+				<li class="nav-item dropdown">
+						<a class="nav-link dropdown" href="#" id="navbardrop" data-toggle="dropdown">Carrer </a>
+						<div class="dropdown-menu">
+						<a class="dropdown-item" href="#">Technical</a>
+						<a class="dropdown-item" href="#">Link2</a>
+						<a class="dropdown-item" href="#">Link3</a>
+						<a class="dropdown-item" href="#">Link4</a>
+					</div>
+				</li>
+				<!--Dropdown End-->	
+			 </li>
+				
+				
+			<!--Search-->
+				 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+					  <form class="form-inline" action="/action_page.php">
+						<input class="form-control mr-sm-2" type="text" placeholder="Search">
+						<button class="btn btn-success" type="submit">Search</button>
+					  </form>
+				</nav> 	
+			
+			<li class="nav-item">
+					<a class="nav-link" href="#">Register</a>
+			</li>
+			<li class="nav-item">
+					<a class="nav-link" href="#">Login</a>
+			</li>
+			<li class="nav-item">
+					<a class="nav-link" href="faqindex.html">FAQ's</a>
+			</li>
+		</ul>	
+		</nav>
+
+
+			<!--Carousel-->
+
+			<div id="demo" class="carousel slide" data-ride="carousel">
+			  <ul class="carousel-indicators">
+				<li data-target="#demo" data-slide-to="0" class="active"></li>
+				<li data-target="#demo" data-slide-to="1"></li>
+				<li data-target="#demo" data-slide-to="2"></li>
+			  </ul>
+			  <div class="carousel-inner">
+				<div class="carousel-item active img-fluid">
+				  <img src="moto.jpg" alt="img2.jpg" width="100" height="500">
+				  <div class="carousel-caption">
+					<h3 style="color:blue">Rental Product</h3>
+					<p style="color:blue">You Can Order for rent</p>
+				  </div>   
+				</div>
+				<div class="carousel-item img-fluid">
+				  <img src="moto6.jpg" alt="Product1" width="100" height="500">
+				  <div class="carousel-caption">
+					<h3 style="color:blue">Rental Product</h3>
+					<p style="color:blue">You Can Order for rent</p>
+				  </div>   
+				</div>
+				<div class="carousel-item img-fluid">
+				  <img src="moto3.jpg" alt="Product3" width="100" height="500">
+				  <div class="carousel-caption">
+					<h3 style="color:blue">Rental Product</h3>
+					<p style="color:blue">You Can Order for rent</p>
+				  </div>   
+				</div>
+			  </div>
+			  
+			  
+		  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+				<span class="carousel-control-prev-icon"></span>
+		  </a>
+		  <a class="carousel-control-next" href="#demo" data-slide="next">
+			<span class="carousel-control-next-icon"></span>
+		  </a>
+		</div>
+
+		<!--Carousel-->
+				</header>
+				
+		<section>
+			<div class="container-fluid">
+				<h1 class="text-center pt-5">About-Us</h1>
+				<hr class="w-25 mx-auto pt-5">
+			</div>
+		</section>
+
+		<section>
+			<div class="row">
+				<div class="col-sm-6">
+					<img src="dress.png" class="img-fluid">
+				</div>
+					<div class="col-sm-6 col-md-6 col-12">
+						<h1> </h1>
+				
+							<p>   SharePal is an online rental solution to all your travel needs. To travel we need
+							luggage and admit it no one likes to buy those travel bags and luggage. Because one they are Expensive 
+							and second it's a headache to Store those luggage bags at home once we are back from our trip.
+							In simple words, we need them only when we travel!
+
+							And we don’t need just luggage to travel, often we need a lot of travel gear too!
+							 like Tents & Sleeping bags for Hiking & Camping, Cameras & Lenses for Photography
+							 tours and these days even a GoPro to capture those thrilling moments when we are diving 
+							 in the ocean or jumping from the clouds. Buying all the luggage & travel gear comes at a 
+							 huge cost. So we thought to make it easy for people to travel, make great memories and 
+							 worry less about the travel costs! At SharePal you can Rent all your travel needs at a 
+							 fraction of their purchase cost. Rent whatever & whenever you need and return hassle
+							 free with our free delivery & return policy. Through SharePal you always get - More Choice & More Savings!
+
+							Our Vision is to make things easily accessible and affordable for people through the use of technology and promoting a sharing culture.
+
+							Our Mission is to create an ecosystem of sharing / renting things thereby making accessibility equivalent to ownership
+							</p>
+								<button class="btn btn-primary">This is Button</button>
+					</div>
+			</div>
+
+		</section>
+
+		<section>
+			<div class="container-fluid">
+				<h1 class="text-center pt-5">List of Products</h1>
+				<hr class="w-25 mx-auto pt-5">
+			</div>
+		</section>
+
+
+
+		<section>
+			<div class="container-fluid">
+				<div class="row ">
+					<div class="col-sm-4 " ><b>Bike</b>
+						<div class="card img-fluid" style="width:500px">
+							<img class="card-img-top" src="bike3.jpg" alt="Card image">
+								<div class="card-img-overlay"><br>
+									<a href="#" class="btn btn-primary">See Details</a>
+								</div>
+						</div>	
+					</div>
+					<div class="col-sm-4" ><b>Cycle</b>
+						<div class="card img-fluid" style="width:500px">
+							<img class="card-img-top" src="cycle3.jpg" style="height:50;" alt="Card image">
+							<div class="card-img-overlay"><br>
+								<a href="#" class="btn btn-primary">See Details</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4" ><b>Scooty</b>
+								<div class="card img-fluid" style="width:500px">
+									<img class="card-img-top " src="scooty.png" alt="Card image">
+										<div class="card-img-overlay"><br>
+											<a href="#" class="btn btn-primary">See Profile</a>
+										</div>
+								</div>
+					  </div>
+					 <hr class="w-25 mx-auto pt-5">  
+				</div>
+			</div>	
+		</section>
+		
+		<!-----How Sharepal Work----->
+		<section>
+			<div class="container-fluid">
+				<h1 class="text-center ">How SharePal Works</h1>
+				<hr class="w-25 mx-auto pt-3">
+					<div class="container-fluid">
+						<div class="container">
+  
+							  <div class="row">
+								<div class="col-sm-2" style="background-color:lavender;">
+									<h3><b>Browse & Select</b></h3>
+									<p>Browse & Select Travel Gear from our wide range of Luggage Bags, Trekking & Camping Gear, Riding Gear & GoPro Cameras.</p>	
+								</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<div class="col-sm-2" style="background-color:lavenderblush;">
+									<h3><b>Submit Order</b></h3>
+									<p>Click "RENT NOW" button & proceed to fill a quick order enquiry form. You will get an estimate, but nothing to pay here.</p>
+								</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<div class="col-sm-2" style="background-color:lavender;">
+									<h3><b>Confirmation</b></h3>
+									<p>We will check the availability and send you a payment link. Just pay a 10% Advance to confirm your booking.</p>
+								</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<div class="col-sm-2" style="background-color:lavender;">
+									<h3><b>Verification</b></h3>
+									<p>Do a quick online verification, details will be sent by us. P.S. This is just to keep our renting community safe & secure.</p>
+								</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+								<div class="col-sm-2" style="background-color:lavender;">
+									<h3><b>Delivery & Pickup</b></h3>
+									<p>Delivery will be 1 day prior to your Start Date. Pick-up will be 1 day after your Return. That's your Free packing & un-packing Time</p>
+								</div>
+							 </div>
+						</div>
+					</div>
+			</div>
+			<hr class="w-25 mx-auto pt-3">
+		</section>
+		
+		
+		
+		<section>
+				
+		</section>
+		
+		<!------------------------Footer--------------------------->
+		
+					<!-- Footer -->
+<footer class="page-footer font-small unique-color-dark" style="  background: linear-gradient(to top, #e61409 0%, #b5a29da1 100%);" >
+
+  <div >
+    <div class="container">
+
+      <!-- Grid row-->
+      <div class="row py-4 d-flex align-items-center">
+
+
+  <!-- Footer Links -->
+  <div class="container-fluid text-center text-md-left mt-5 ">
+
+    <!-- Grid row -->
+    <div class="row mt-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+        <!-- Content -->
+        <h6 class="text-uppercase font-weight-bold">About Sanjay</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>Name:Sanjay Kumar Ravi,From National Institute of Technology Raipur(C.G).Email.techsanjay2@gmail.com. Mob:6261743558</p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Products</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <a href="#!">Product1</a>
+        </p>
+        <p>
+          <a href="#!">product2</a>
+        </p>
+        <p>
+          <a href="#!">product3</a>
+        </p>
+        <p>
+          <a href="#!">product4</a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Useful links</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <a href="#!">Link1</a>
+        </p>
+        <p>
+          <a href="#!">Link2</a>
+        </p>
+        <p>
+          <a href="#!">Link3</a>
+        </p>
+        <p>
+          <a href="#!">Help</a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Contact</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <i class="fas fa-home mr-3"></i> Banglore</p>
+        <p>
+          <i class="fas fa-envelope mr-3"></i> Sharepla.in Banglore India</p>
+        <p>
+          <i class="fas fa-phone mr-3"></i> +91 01 234 567 88</p>
+        <p>
+          <i class="fas fa-print mr-3"></i> +91 01 234 567 89</p>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2019 Copyright:
+    <a href="https://sharepal.in/">Sharepal.in</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+	
+	
+	</body>
+</html>
+	
+	
